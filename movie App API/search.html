@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./search.css">
+
+    <title>Movie App</title>
+  </head>
+  <body>
+    <div id="navbar">
+      <div id="nav1">
+        <a href="./index.html">
+
+          <img
+            src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+            alt=""
+          />
+        </a>
+
+        <h3>TV</h3>
+        <h3>Movies</h3>
+        <h3>Sports</h3>
+        <h3>Disney+</h3>
+        <h3>KIDS+</h3>
+      </div>
+      <div id="nav2">
+        <a href="search.html">
+          <input type="text" placeholder="Search" id="search" />
+        </a>
+        <button id="btn">SUBSCRIBE</button>
+        <h3>LOGIN</h3>
+      </div>
+    </div>
+
+    <div>
+      <input
+        oninput="debouncing(searchMovies,2000)"
+        type="text"
+        id="movie_name"
+      />
+      <!-- <button onclick="searchMovies()">Search Movies</button> -->
+    </div>
+    <div id="loader_div">
+     <a href="./index.html">
+      <img
+      id="loader_gif"
+      src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif"
+      alt=""
+    />
+     </a>
+    </div>
+    <div id="carosel1">
+      <div id="div1"></div>
+    </div>
+    <div id="movies">
+      <!-- <div id="div"></div> -->
+    </div>
+  </body>
+</html>
+<!-- <script type="module" src="./search.js"></script> -->
+<script src="./search.js"></script>
